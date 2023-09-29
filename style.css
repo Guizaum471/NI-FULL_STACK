@@ -1,0 +1,201 @@
+/* Define estilos para o corpo da página */
+body {
+   margin: 0;
+   padding: 0;
+   color: #fffafa8f; /* Cor do texto */
+   font-family: sans-serif;
+   font-size: larger;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+}
+
+/* Define uma fonte personalizada chamada Runico */
+@font-face {
+   font-family: Runico;
+   src: url(Font/RUNE.TTF);
+}
+
+/* Estilos para o ícone da barra de navegação */
+.navbar-icon {
+   width: 50px;
+   transition: .4s;
+}
+
+.collapse {
+   font-family: Runico;
+}
+
+.navbar-icon:hover {
+   transform: scale(1.2);
+}
+
+.navbar-toggler {
+   border: none;
+}
+
+/* Estilos para os cabeçalhos (h1, h2, h3, h4) */
+h1, h2, h3, h4 {
+   font-weight: 900;
+   color: #ffffff; /* Cor do texto dos cabeçalhos */
+}
+
+/* Estilos para o contêiner principal */
+.wrapper {
+   width: 100%;
+   margin: 0 auto;
+}
+
+/* Estilos para a seção principal */
+main {
+   display: block;
+   background-color: #fff;
+}
+
+/* Estilos para o contêiner secundário */
+.container {
+   width: 100%;
+   max-width: 760px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+/* Estilos para parágrafos dentro de uma seção */
+section.module p {
+   margin-bottom: 40px;
+}
+
+/* Estilos para a última seção */
+section.module:last-child {
+   margin-bottom: 0;
+}
+
+/* Estilos para os títulos das seções */
+section.module h2 {
+   margin-bottom: 40px;
+   font-size: 30px;
+}
+
+/* Estilos para o conteúdo das seções */
+section.module.content {
+   padding: 40px 0;
+   background-color: #000000;
+}
+
+/* Estilos para as seções de parallax */
+section.module.parallax {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh !important;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   -webkit-background-size: cover;
+   -o-background-size: cover;
+}
+
+/* Estilos para o efeito de gradiente nas seções de parallax */
+section.module.parallax::after {
+   content: "";
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 8;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0), #000 100%),
+               linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0), #000 100%);
+}
+
+/* Estilos para cada seção de parallax com uma imagem de fundo específica */
+section.module.parallax-1 {
+   background-image: url(IMG/Odin.jpg);
+}
+
+section.module.parallax-2 {
+   background-image: url(IMG/loki2.jpg);
+}
+
+section.module.parallax-3 {
+   background-image: url(IMG/thor2.jpg);
+}
+
+section.module.parallax-4 {
+   background-image: url(IMG/fenrir.jpg);
+}
+
+/* Estilos para o texto dentro das seções de parallax */
+section.module.parallax h1 {
+   color: #fff;
+   text-align: center;
+   font-size: 80px;
+   z-index: 50;
+   text-transform: uppercase;
+}
+
+/* Estilos para áreas específicas (ocultas) */
+.area-1, .area-2, .area-3 {
+   visibility: hidden;
+}
+
+/* Estilos para as cartas (cards) */
+.cards {
+   background-color: #000;
+   padding: 10px;
+}
+
+/* Estilos para colunas de tamanho médio */
+.col-md-6 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #fff;
+   background-color: #000;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+/* Estilos para os títulos de informação */
+.h2info {
+   color: #fff;
+}
+
+.col-md-6 p {
+   margin-top: 10px;
+}
+
+/* Estilos para o texto das cartas (cards) */
+.card-text {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #fff;
+   background-color: #000;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+/* Estilos para o rodapé (footer) */
+footer {
+   padding: 15px;
+   background-color: #000;
+}
+
+/* Estilos para os ícones sociais */
+.social-icon {
+   text-decoration: none;
+}
+
+/* Estilos para o ícone de "in" (LinkedIn) */
+.in {
+   color: rgba(167, 53, 38, 0.719);
+}
+
+/* Estilos para o ícone de "wh" (WhatsApp) */
+.wh {
+   color: #3cff00;
+}
+
+/* Estilos para os links de texto */
+.wr {
+   text-decoration: none;
+}
+
+
